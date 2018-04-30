@@ -1,0 +1,696 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.23.0.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: ATOMIZ Lwpud, Eqmrdfi, LIC=RC930-BI296-MMV9I-TYZ8J-NX0R5-L0UTH
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.23
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.6
+Assembler:       Armasm.exe V6.6
+Linker/Locator:  ArmLink.exe V6.6
+Library Manager: ArmAr.exe V6.6
+Hex Converter:   FromElf.exe V6.6
+CPU DLL:         SARMCM3.DLL V5.23
+Dialog DLL:      DCM.DLL V1.15.0.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.18.0
+Dialog DLL:      TCM.DLL V1.27.0.0
+ 
+<h2>Project:</h2>
+C:\Users\mt659\Desktop\´®¿ÚÍ¨ÐÅ²âÊÔ\USER\Template.uvprojx
+Project File Date:  03/20/2018
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.6', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'Template'
+assembling startup_stm32f10x_hd.s...
+../FWLIB/src/misc.c(24): warning: In file included from...
+../FWLIB/inc\misc.h(32): warning: In file included from...
+../CMSIS\stm32f10x.h(478): warning: In file included from...
+../CMSIS/core_cm3.h(1468): error: unknown type name '__INLINE'
+static __INLINE void NVIC_SetPriorityGrouping(uint32_t PriorityGroup)
+       ^
+../CMSIS/core_cm3.h(1468): error: expected identifier or '('
+static __INLINE void NVIC_SetPriorityGrouping(uint32_t PriorityGroup)
+                ^
+../CMSIS/core_cm3.h(1489): error: unknown type name '__INLINE'
+static __INLINE uint32_t NVIC_GetPriorityGrouping(void)
+       ^
+../CMSIS/core_cm3.h(1489): error: expected ';' after top level declarator
+static __INLINE uint32_t NVIC_GetPriorityGrouping(void)
+                        ^
+                        ;
+../CMSIS/core_cm3.h(1756): error: unknown type name '__INLINE'
+static __INLINE uint32_t ITM_SendChar (uint32_t ch)
+       ^
+../CMSIS/core_cm3.h(1756): error: expected ';' after top level declarator
+static __INLINE uint32_t ITM_SendChar (uint32_t ch)
+                        ^
+                        ;
+../FWLIB/src/misc.c(132): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wconversion]
+    NVIC->IP[NVIC_InitStruct->NVIC_IRQChannel] = tmppriority;
+                                               ~ ^~~~~~~~~~~
+1 warning and 6 errors generated.
+compiling misc.c...
+../FWLIB/src/stm32f10x_dma.c(23): warning: In file included from...
+../FWLIB/inc\stm32f10x_dma.h(32): warning: In file included from...
+../CMSIS\stm32f10x.h(478): warning: In file included from...
+../CMSIS/core_cm3.h(1468): error: unknown type name '__INLINE'
+static __INLINE void NVIC_SetPriorityGrouping(uint32_t PriorityGroup)
+       ^
+../CMSIS/core_cm3.h(1468): error: expected identifier or '('
+static __INLINE void NVIC_SetPriorityGrouping(uint32_t PriorityGroup)
+                ^
+../CMSIS/core_cm3.h(1489): error: unknown type name '__INLINE'
+static __INLINE uint32_t NVIC_GetPriorityGrouping(void)
+       ^
+../CMSIS/core_cm3.h(1489): error: expected ';' after top level declarator
+static __INLINE uint32_t NVIC_GetPriorityGrouping(void)
+                        ^
+                        ;
+../CMSIS/core_cm3.h(1756): error: unknown type name '__INLINE'
+static __INLINE uint32_t ITM_SendChar (uint32_t ch)
+       ^
+../CMSIS/core_cm3.h(1756): error: expected ';' after top level declarator
+static __INLINE uint32_t ITM_SendChar (uint32_t ch)
+                        ^
+                        ;
+6 errors generated.
+compiling stm32f10x_dma.c...
+main.c(12): warning: non-portable path to file '"System_Conf.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "system_conf.h"
+         ^~~~~~~~~~~~~~~
+         "System_Conf.h"
+main.c(12): warning: In file included from...
+../APP\system_conf.h(4): warning: In file included from...
+../CMSIS\stm32f10x.h(478): warning: In file included from...
+../CMSIS/core_cm3.h(1468): error: unknown type name '__INLINE'
+static __INLINE void NVIC_SetPriorityGrouping(uint32_t PriorityGroup)
+       ^
+../CMSIS/core_cm3.h(1468): error: expected identifier or '('
+static __INLINE void NVIC_SetPriorityGrouping(uint32_t PriorityGroup)
+                ^
+../CMSIS/core_cm3.h(1489): error: unknown type name '__INLINE'
+static __INLINE uint32_t NVIC_GetPriorityGrouping(void)
+       ^
+../CMSIS/core_cm3.h(1489): error: expected ';' after top level declarator
+static __INLINE uint32_t NVIC_GetPriorityGrouping(void)
+                        ^
+                        ;
+../CMSIS/core_cm3.h(1756): error: unknown type name '__INLINE'
+static __INLINE uint32_t ITM_SendChar (uint32_t ch)
+       ^
+../CMSIS/core_cm3.h(1756): error: expected ';' after top level declarator
+static __INLINE uint32_t ITM_SendChar (uint32_t ch)
+                        ^
+                        ;
+main.c(12): warning: In file included from...
+../APP\system_conf.h(5): warning: non-portable path to file '"USART.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "usart.h"   //<B4><AE><BF><U+06B6><A8><D2><E5>
+         ^~~~~~~~~
+         "USART.h"
+main.c(12): warning: In file included from...
+../APP/system_conf.h(5): warning: In file included from...
+../APP/usart.h(16): warning: non-portable path to file '"System_Conf.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "system_conf.h"
+         ^~~~~~~~~~~~~~~
+         "System_Conf.h"
+main.c(12): warning: In file included from...
+../APP/system_conf.h(6): warning: non-portable path to file '"DMA.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "dma.h"     //DMA<U+0123><BF><U+9DA8><D2><E5>
+         ^~~~~~~
+         "DMA.h"
+main.c(12): warning: In file included from...
+../APP/system_conf.h(6): warning: In file included from...
+../APP/dma.h(6): warning: non-portable path to file '"System_Conf.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "system_conf.h"
+         ^~~~~~~~~~~~~~~
+         "System_Conf.h"
+main.c(12): warning: In file included from...
+../APP/system_conf.h(8): warning: non-portable path to file '"SysTick.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "systick.h"
+         ^~~~~~~~~~~
+         "SysTick.h"
+main.c(12): warning: In file included from...
+../APP/system_conf.h(8): warning: In file included from...
+../APP/systick.h(5): warning: non-portable path to file '"System_Conf.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "system_conf.h"
+         ^~~~~~~~~~~~~~~
+         "System_Conf.h"
+main.c(18): warning: no previous prototype for function 'Delay' [-Wmissing-prototypes]
+void Delay(__IO u32 nCount)
+     ^
+main.c(25): warning: declaration shadows a variable in the global scope [-Wshadow]
+        unsigned char i;
+                      ^
+main.c(14): note: previous declaration is here
+long int i;
+         ^
+main.c(33): warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+                        USART_SendStr(USART1,"USART1<B4><AE><BF><DA>");     //TX<A3><BA>A9
+                                                    ^~~~~~~~~~~~~~~~
+main.c(34): warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+                        USART_SendStr(USART2,"USART2<B4><AE><BF><DA>");     //TX<A3><BA>A2
+                                                    ^~~~~~~~~~~~~~~~
+main.c(35): warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+                        USART_SendStr(USART3,"USART3<B4><AE><BF><DA>");     //TX<A3><BA>B10
+                                                    ^~~~~~~~~~~~~~~~
+main.c(36): warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+                        USART_SendStr(UART4,"UART4<B4><AE><BF><DA>");               //TX<A3><BA>C10
+                                                  ^~~~~~~~~~~~~~~~
+main.c(37): warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+                        USART_SendStr(UART5,"UART5<B4><AE><BF><DA>");               //TX<A3><BA>C12
+                                                  ^~~~~~~~~~~~~~~~
+main.c(39): warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+                        USART_Data_Send("<U+0368><B5><C0><U+04BB>",6,DMA_USART1);
+                                                 ^~~~~~~~
+main.c(39): warning: passing 'char [7]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+                        USART_Data_Send("<U+0368><B5><C0><U+04BB>",6,DMA_USART1);
+                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../APP/usart.h(31): note: passing argument to parameter 'data' here
+void USART_Data_Send(uint8_t *data,u16 LenghtSize,DMA_USARTy USARTz);
+                              ^
+main.c(41): warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+                        USART_Data_Send("<U+0368><B5><C0><B6><FE>",6,DMA_USART2);
+                                                 ^~~~~~~~~~~~~~~~
+main.c(41): warning: passing 'char [7]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+                        USART_Data_Send("<U+0368><B5><C0><B6><FE>",6,DMA_USART2);
+                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../APP/usart.h(31): note: passing argument to parameter 'data' here
+void USART_Data_Send(uint8_t *data,u16 LenghtSize,DMA_USARTy USARTz);
+                              ^
+main.c(43): warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+                        USART_Data_Send("<U+0368><B5><C0><C8><FD>",6,DMA_USART3);
+                                                 ^~~~~~~~~~~~~~~~
+main.c(43): warning: passing 'char [7]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+                        USART_Data_Send("<U+0368><B5><C0><C8><FD>",6,DMA_USART3);
+                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../APP/usart.h(31): note: passing argument to parameter 'data' here
+void USART_Data_Send(uint8_t *data,u16 LenghtSize,DMA_USARTy USARTz);
+                              ^
+main.c(45): warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+                        USART_Data_Send("<U+0368><B5><C0><CB><C4>",6,DMA_UART4);
+                                                 ^~~~~~~~~~~~~~~~
+main.c(45): warning: passing 'char [7]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+                        USART_Data_Send("<U+0368><B5><C0><CB><C4>",6,DMA_UART4);
+                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../APP/usart.h(31): note: passing argument to parameter 'data' here
+void USART_Data_Send(uint8_t *data,u16 LenghtSize,DMA_USARTy USARTz);
+                              ^
+main.c(14): warning: no previous extern declaration for non-static variable 'i' [-Wmissing-variable-declarations]
+long int i;
+         ^
+main.c(15): warning: no previous extern declaration for non-static variable 'n' [-Wmissing-variable-declarations]
+u16 n;
+    ^
+24 warnings and 6 errors generated.
+compiling main.c...
+../FWLIB/src/stm32f10x_gpio.c(23): warning: In file included from...
+../FWLIB/inc\stm32f10x_gpio.h(32): warning: In file included from...
+../CMSIS\stm32f10x.h(478): warning: In file included from...
+../CMSIS/core_cm3.h(1468): error: unknown type name '__INLINE'
+static __INLINE void NVIC_SetPriorityGrouping(uint32_t PriorityGroup)
+       ^
+../CMSIS/core_cm3.h(1468): error: expected identifier or '('
+static __INLINE void NVIC_SetPriorityGrouping(uint32_t PriorityGroup)
+                ^
+../CMSIS/core_cm3.h(1489): error: unknown type name '__INLINE'
+static __INLINE uint32_t NVIC_GetPriorityGrouping(void)
+       ^
+../CMSIS/core_cm3.h(1489): error: expected ';' after top level declarator
+static __INLINE uint32_t NVIC_GetPriorityGrouping(void)
+                        ^
+                        ;
+../CMSIS/core_cm3.h(1756): error: unknown type name '__INLINE'
+static __INLINE uint32_t ITM_SendChar (uint32_t ch)
+       ^
+../CMSIS/core_cm3.h(1756): error: expected ';' after top level declarator
+static __INLINE uint32_t ITM_SendChar (uint32_t ch)
+                        ^
+                        ;
+6 errors generated.
+compiling stm32f10x_gpio.c...
+stm32f10x_it.c(25): warning: In file included from...
+../USER/stm32f10x_it.h(31): warning: In file included from...
+../CMSIS\stm32f10x.h(478): warning: In file included from...
+../CMSIS/core_cm3.h(1468): error: unknown type name '__INLINE'
+static __INLINE void NVIC_SetPriorityGrouping(uint32_t PriorityGroup)
+       ^
+../CMSIS/core_cm3.h(1468): error: expected identifier or '('
+static __INLINE void NVIC_SetPriorityGrouping(uint32_t PriorityGroup)
+                ^
+../CMSIS/core_cm3.h(1489): error: unknown type name '__INLINE'
+static __INLINE uint32_t NVIC_GetPriorityGrouping(void)
+       ^
+../CMSIS/core_cm3.h(1489): error: expected ';' after top level declarator
+static __INLINE uint32_t NVIC_GetPriorityGrouping(void)
+                        ^
+                        ;
+../CMSIS/core_cm3.h(1756): error: unknown type name '__INLINE'
+static __INLINE uint32_t ITM_SendChar (uint32_t ch)
+       ^
+../CMSIS/core_cm3.h(1756): error: expected ';' after top level declarator
+static __INLINE uint32_t ITM_SendChar (uint32_t ch)
+                        ^
+                        ;
+stm32f10x_it.c(26): warning: In file included from...
+../APP\DMA.h(6): warning: non-portable path to file '"System_Conf.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "system_conf.h"
+         ^~~~~~~~~~~~~~~
+         "System_Conf.h"
+stm32f10x_it.c(26): warning: In file included from...
+../APP\DMA.h(6): warning: In file included from...
+../APP/system_conf.h(5): warning: non-portable path to file '"USART.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "usart.h"   //<B4><AE><BF><U+06B6><A8><D2><E5>
+         ^~~~~~~~~
+         "USART.h"
+stm32f10x_it.c(26): warning: In file included from...
+../APP\DMA.h(6): warning: In file included from...
+../APP/system_conf.h(5): warning: In file included from...
+../APP/usart.h(16): warning: non-portable path to file '"System_Conf.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "system_conf.h"
+         ^~~~~~~~~~~~~~~
+         "System_Conf.h"
+stm32f10x_it.c(26): warning: In file included from...
+../APP/dma.h(6): warning: In file included from...
+../APP/system_conf.h(6): warning: non-portable path to file '"DMA.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "dma.h"     //DMA<U+0123><BF><U+9DA8><D2><E5>
+         ^~~~~~~
+         "DMA.h"
+../APP/system_conf.h(8): warning: non-portable path to file '"SysTick.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "systick.h"
+         ^~~~~~~~~~~
+         "SysTick.h"
+stm32f10x_it.c(26): warning: In file included from...
+../APP/dma.h(6): warning: In file included from...
+../APP/system_conf.h(8): warning: In file included from...
+../APP/systick.h(5): warning: non-portable path to file '"System_Conf.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "system_conf.h"
+         ^~~~~~~~~~~~~~~
+         "System_Conf.h"
+stm32f10x_it.c(26): warning: In file included from...
+../APP/dma.h(18): warning: padding struct 'DMA_USARTy_RxBuffer_param' with 1 byte to align 'DMA_USART1_RxByteSize' [-Wpadded]
+   uint16_t DMA_USART1_RxByteSize;     //<B6><A8><D2><E5>RxByte<U+03AA><BD><D3><CA><D5><C1><CB><D7><U+05BD><DA><CA><FD>
+            ^
+../APP/dma.h(20): warning: padding struct 'DMA_USARTy_RxBuffer_param' with 1 byte to align 'DMA_USART2_RxByteSize' [-Wpadded]
+   uint16_t DMA_USART2_RxByteSize;     //<B6><A8><D2><E5>RxByte<U+03AA><BD><D3><CA><D5><C1><CB><D7><U+05BD><DA><CA><FD>
+            ^
+../APP/dma.h(22): warning: padding struct 'DMA_USARTy_RxBuffer_param' with 1 byte to align 'DMA_USART3_RxByteSize' [-Wpadded]
+   uint16_t DMA_USART3_RxByteSize;     //<B6><A8><D2><E5>RxByte<U+03AA><BD><D3><CA><D5><C1><CB><D7><U+05BD><DA><CA><FD>
+            ^
+stm32f10x_it.c(158): warning: no previous prototype for function 'DMA1_Channel5_IRQHandler' [-Wmissing-prototypes]
+void DMA1_Channel5_IRQHandler(void)
+     ^
+stm32f10x_it.c(188): warning: no previous prototype for function 'DMA1_Channel6_IRQHandler' [-Wmissing-prototypes]
+void DMA1_Channel6_IRQHandler(void)
+     ^
+11 warnings and 6 errors generated.
+compiling stm32f10x_it.c...
+../FWLIB/src/stm32f10x_rcc.c(23): warning: In file included from...
+../FWLIB/inc\stm32f10x_rcc.h(32): warning: In file included from...
+../CMSIS\stm32f10x.h(478): warning: In file included from...
+../CMSIS/core_cm3.h(1468): error: unknown type name '__INLINE'
+static __INLINE void NVIC_SetPriorityGrouping(uint32_t PriorityGroup)
+       ^
+../CMSIS/core_cm3.h(1468): error: expected identifier or '('
+static __INLINE void NVIC_SetPriorityGrouping(uint32_t PriorityGroup)
+                ^
+../CMSIS/core_cm3.h(1489): error: unknown type name '__INLINE'
+static __INLINE uint32_t NVIC_GetPriorityGrouping(void)
+       ^
+../CMSIS/core_cm3.h(1489): error: expected ';' after top level declarator
+static __INLINE uint32_t NVIC_GetPriorityGrouping(void)
+                        ^
+                        ;
+../CMSIS/core_cm3.h(1756): error: unknown type name '__INLINE'
+static __INLINE uint32_t ITM_SendChar (uint32_t ch)
+       ^
+../CMSIS/core_cm3.h(1756): error: expected ';' after top level declarator
+static __INLINE uint32_t ITM_SendChar (uint32_t ch)
+                        ^
+                        ;
+6 errors generated.
+compiling stm32f10x_rcc.c...
+../FWLIB/src/stm32f10x_usart.c(23): warning: In file included from...
+../FWLIB/inc\stm32f10x_usart.h(32): warning: In file included from...
+../CMSIS\stm32f10x.h(478): warning: In file included from...
+../CMSIS/core_cm3.h(1468): error: unknown type name '__INLINE'
+static __INLINE void NVIC_SetPriorityGrouping(uint32_t PriorityGroup)
+       ^
+../CMSIS/core_cm3.h(1468): error: expected identifier or '('
+static __INLINE void NVIC_SetPriorityGrouping(uint32_t PriorityGroup)
+                ^
+../CMSIS/core_cm3.h(1489): error: unknown type name '__INLINE'
+static __INLINE uint32_t NVIC_GetPriorityGrouping(void)
+       ^
+../CMSIS/core_cm3.h(1489): error: expected ';' after top level declarator
+static __INLINE uint32_t NVIC_GetPriorityGrouping(void)
+                        ^
+                        ;
+../CMSIS/core_cm3.h(1756): error: unknown type name '__INLINE'
+static __INLINE uint32_t ITM_SendChar (uint32_t ch)
+       ^
+../CMSIS/core_cm3.h(1756): error: expected ';' after top level declarator
+static __INLINE uint32_t ITM_SendChar (uint32_t ch)
+                        ^
+                        ;
+../FWLIB/src/stm32f10x_usart.c(1043): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wconversion]
+  itmask = ((uint16_t)0x01 << (uint16_t)bitpos);
+         ~  ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+1 warning and 6 errors generated.
+compiling stm32f10x_usart.c...
+../FWLIB/src/stm32f10x_sdio.c(23): warning: In file included from...
+../FWLIB/inc\stm32f10x_sdio.h(32): warning: In file included from...
+../CMSIS\stm32f10x.h(478): warning: In file included from...
+../CMSIS/core_cm3.h(1468): error: unknown type name '__INLINE'
+static __INLINE void NVIC_SetPriorityGrouping(uint32_t PriorityGroup)
+       ^
+../CMSIS/core_cm3.h(1468): error: expected identifier or '('
+static __INLINE void NVIC_SetPriorityGrouping(uint32_t PriorityGroup)
+                ^
+../CMSIS/core_cm3.h(1489): error: unknown type name '__INLINE'
+static __INLINE uint32_t NVIC_GetPriorityGrouping(void)
+       ^
+../CMSIS/core_cm3.h(1489): error: expected ';' after top level declarator
+static __INLINE uint32_t NVIC_GetPriorityGrouping(void)
+                        ^
+                        ;
+../CMSIS/core_cm3.h(1756): error: unknown type name '__INLINE'
+static __INLINE uint32_t ITM_SendChar (uint32_t ch)
+       ^
+../CMSIS/core_cm3.h(1756): error: expected ';' after top level declarator
+static __INLINE uint32_t ITM_SendChar (uint32_t ch)
+                        ^
+                        ;
+6 errors generated.
+compiling stm32f10x_sdio.c...
+../CMSIS/system_stm32f10x.c(65): warning: In file included from...
+../CMSIS/stm32f10x.h(478): warning: In file included from...
+../CMSIS/core_cm3.h(1468): error: unknown type name '__INLINE'
+static __INLINE void NVIC_SetPriorityGrouping(uint32_t PriorityGroup)
+       ^
+../CMSIS/core_cm3.h(1468): error: expected identifier or '('
+static __INLINE void NVIC_SetPriorityGrouping(uint32_t PriorityGroup)
+                ^
+../CMSIS/core_cm3.h(1489): error: unknown type name '__INLINE'
+static __INLINE uint32_t NVIC_GetPriorityGrouping(void)
+       ^
+../CMSIS/core_cm3.h(1489): error: expected ';' after top level declarator
+static __INLINE uint32_t NVIC_GetPriorityGrouping(void)
+                        ^
+                        ;
+../CMSIS/core_cm3.h(1756): error: unknown type name '__INLINE'
+static __INLINE uint32_t ITM_SendChar (uint32_t ch)
+       ^
+../CMSIS/core_cm3.h(1756): error: expected ';' after top level declarator
+static __INLINE uint32_t ITM_SendChar (uint32_t ch)
+                        ^
+                        ;
+../CMSIS/system_stm32f10x.c(162): warning: no previous extern declaration for non-static variable 'SystemCoreClock' [-Wmissing-variable-declarations]
+  uint32_t SystemCoreClock         = SYSCLK_FREQ_72MHz;        /*!< System Clock Frequency (Core Clock) */
+           ^
+../CMSIS/system_stm32f10x.c(167): warning: no previous extern declaration for non-static variable 'AHBPrescTable' [-Wmissing-variable-declarations]
+__I uint8_t AHBPrescTable[16] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9};
+            ^
+2 warnings and 6 errors generated.
+compiling system_stm32f10x.c...
+../APP/DMA.c(1): warning: In file included from...
+../APP/DMA.h(6): warning: non-portable path to file '"System_Conf.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "system_conf.h"
+         ^~~~~~~~~~~~~~~
+         "System_Conf.h"
+../APP/DMA.c(1): warning: In file included from...
+../APP/DMA.h(6): warning: In file included from...
+../APP/system_conf.h(4): warning: In file included from...
+../CMSIS\stm32f10x.h(478): warning: In file included from...
+../CMSIS/core_cm3.h(1468): error: unknown type name '__INLINE'
+static __INLINE void NVIC_SetPriorityGrouping(uint32_t PriorityGroup)
+       ^
+../CMSIS/core_cm3.h(1468): error: expected identifier or '('
+static __INLINE void NVIC_SetPriorityGrouping(uint32_t PriorityGroup)
+                ^
+../CMSIS/core_cm3.h(1489): error: unknown type name '__INLINE'
+static __INLINE uint32_t NVIC_GetPriorityGrouping(void)
+       ^
+../CMSIS/core_cm3.h(1489): error: expected ';' after top level declarator
+static __INLINE uint32_t NVIC_GetPriorityGrouping(void)
+                        ^
+                        ;
+../CMSIS/core_cm3.h(1756): error: unknown type name '__INLINE'
+static __INLINE uint32_t ITM_SendChar (uint32_t ch)
+       ^
+../CMSIS/core_cm3.h(1756): error: expected ';' after top level declarator
+static __INLINE uint32_t ITM_SendChar (uint32_t ch)
+                        ^
+                        ;
+../APP/DMA.c(1): warning: In file included from...
+../APP/DMA.h(6): warning: In file included from...
+../APP/system_conf.h(5): warning: non-portable path to file '"USART.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "usart.h"   //<B4><AE><BF><U+06B6><A8><D2><E5>
+         ^~~~~~~~~
+         "USART.h"
+../APP/DMA.c(1): warning: In file included from...
+../APP/DMA.h(6): warning: In file included from...
+../APP/system_conf.h(5): warning: In file included from...
+../APP/usart.h(16): warning: non-portable path to file '"System_Conf.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "system_conf.h"
+         ^~~~~~~~~~~~~~~
+         "System_Conf.h"
+../APP/DMA.c(1): warning: In file included from...
+../APP/dma.h(6): warning: In file included from...
+../APP/system_conf.h(6): warning: non-portable path to file '"DMA.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "dma.h"     //DMA<U+0123><BF><U+9DA8><D2><E5>
+         ^~~~~~~
+         "DMA.h"
+../APP/system_conf.h(8): warning: non-portable path to file '"SysTick.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "systick.h"
+         ^~~~~~~~~~~
+         "SysTick.h"
+../APP/DMA.c(1): warning: In file included from...
+../APP/dma.h(6): warning: In file included from...
+../APP/system_conf.h(8): warning: In file included from...
+../APP/systick.h(5): warning: non-portable path to file '"System_Conf.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "system_conf.h"
+         ^~~~~~~~~~~~~~~
+         "System_Conf.h"
+../APP/DMA.c(3): warning: no previous extern declaration for non-static variable 'DMA_USARTy_RxBufferStruct' [-Wmissing-variable-declarations]
+  DMA_USARTy_RxBuffer DMA_USARTy_RxBufferStruct;
+                      ^
+../APP/DMA.c(4): warning: no previous extern declaration for non-static variable 'DMA_USARTy_RxBuffer_paramStruct' [-Wmissing-variable-declarations]
+  DMA_USARTy_RxBuffer_param DMA_USARTy_RxBuffer_paramStruct;
+                            ^
+../APP/DMA.c(5): warning: no previous extern declaration for non-static variable 'DMA_USARTy_RECE_FlagStatus' [-Wmissing-variable-declarations]
+        DMA_USARTy_RECE_Flag DMA_USARTy_RECE_FlagStatus;
+                             ^
+9 warnings and 6 errors generated.
+compiling DMA.c...
+../APP/USART.c(14): warning: non-portable path to file '"USART.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "usart.h"
+         ^~~~~~~~~
+         "USART.h"
+../APP/USART.c(14): warning: In file included from...
+../APP/usart.h(16): warning: non-portable path to file '"System_Conf.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "system_conf.h"
+         ^~~~~~~~~~~~~~~
+         "System_Conf.h"
+../APP/USART.c(14): warning: In file included from...
+../APP/usart.h(16): warning: In file included from...
+../APP/system_conf.h(4): warning: In file included from...
+../CMSIS\stm32f10x.h(478): warning: In file included from...
+../CMSIS/core_cm3.h(1468): error: unknown type name '__INLINE'
+static __INLINE void NVIC_SetPriorityGrouping(uint32_t PriorityGroup)
+       ^
+../CMSIS/core_cm3.h(1468): error: expected identifier or '('
+static __INLINE void NVIC_SetPriorityGrouping(uint32_t PriorityGroup)
+                ^
+../CMSIS/core_cm3.h(1489): error: unknown type name '__INLINE'
+static __INLINE uint32_t NVIC_GetPriorityGrouping(void)
+       ^
+../CMSIS/core_cm3.h(1489): error: expected ';' after top level declarator
+static __INLINE uint32_t NVIC_GetPriorityGrouping(void)
+                        ^
+                        ;
+../CMSIS/core_cm3.h(1756): error: unknown type name '__INLINE'
+static __INLINE uint32_t ITM_SendChar (uint32_t ch)
+       ^
+../CMSIS/core_cm3.h(1756): error: expected ';' after top level declarator
+static __INLINE uint32_t ITM_SendChar (uint32_t ch)
+                        ^
+                        ;
+../APP/USART.c(14): warning: In file included from...
+../APP/usart.h(16): warning: In file included from...
+../APP/system_conf.h(5): warning: non-portable path to file '"USART.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "usart.h"   //<B4><AE><BF><U+06B6><A8><D2><E5>
+         ^~~~~~~~~
+         "USART.h"
+../APP/system_conf.h(6): warning: non-portable path to file '"DMA.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "dma.h"     //DMA<U+0123><BF><U+9DA8><D2><E5>
+         ^~~~~~~
+         "DMA.h"
+../APP/USART.c(14): warning: In file included from...
+../APP/usart.h(16): warning: In file included from...
+../APP/system_conf.h(6): warning: In file included from...
+../APP/dma.h(6): warning: non-portable path to file '"System_Conf.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "system_conf.h"
+         ^~~~~~~~~~~~~~~
+         "System_Conf.h"
+../APP/USART.c(14): warning: In file included from...
+../APP/usart.h(16): warning: In file included from...
+../APP/system_conf.h(8): warning: non-portable path to file '"SysTick.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "systick.h"
+         ^~~~~~~~~~~
+         "SysTick.h"
+../APP/USART.c(14): warning: In file included from...
+../APP/usart.h(16): warning: In file included from...
+../APP/system_conf.h(8): warning: In file included from...
+../APP/systick.h(5): warning: non-portable path to file '"System_Conf.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "system_conf.h"
+         ^~~~~~~~~~~~~~~
+         "System_Conf.h"
+../APP/USART.c(15): warning: no previous extern declaration for non-static variable 'USART_DefaultBaudRate' [-Wmissing-variable-declarations]
+uint32_t USART_DefaultBaudRate = 0;
+         ^
+../APP/USART.c(14): warning: In file included from...
+../APP/usart.h(16): warning: In file included from...
+../APP/system_conf.h(4): warning: In file included from...
+../CMSIS\stm32f10x.h(8297): warning: In file included from...
+../USER\stm32f10x_conf.h(48): warning: In file included from...
+../FWLIB/inc\stm32f10x_usart.h(50): warning: padding size of 'USART_InitTypeDef' with 2 bytes to alignment boundary [-Wpadded]
+typedef struct
+        ^
+../APP/USART.c(201): warning: unused parameter 'f' [-Wunused-parameter]
+int fputc(int ch,FILE *f)
+                       ^
+10 warnings and 6 errors generated.
+compiling USART.c...
+../APP/SysTick.c(1): warning: non-portable path to file '"SysTick.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "systick.h"
+         ^~~~~~~~~~~
+         "SysTick.h"
+../APP/SysTick.c(1): warning: In file included from...
+../APP/systick.h(5): warning: non-portable path to file '"System_Conf.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "system_conf.h"
+         ^~~~~~~~~~~~~~~
+         "System_Conf.h"
+../APP/SysTick.c(1): warning: In file included from...
+../APP/systick.h(5): warning: In file included from...
+../APP/system_conf.h(4): warning: In file included from...
+../CMSIS\stm32f10x.h(478): warning: In file included from...
+../CMSIS/core_cm3.h(1468): error: unknown type name '__INLINE'
+static __INLINE void NVIC_SetPriorityGrouping(uint32_t PriorityGroup)
+       ^
+../CMSIS/core_cm3.h(1468): error: expected identifier or '('
+static __INLINE void NVIC_SetPriorityGrouping(uint32_t PriorityGroup)
+                ^
+../CMSIS/core_cm3.h(1489): error: unknown type name '__INLINE'
+static __INLINE uint32_t NVIC_GetPriorityGrouping(void)
+       ^
+../CMSIS/core_cm3.h(1489): error: expected ';' after top level declarator
+static __INLINE uint32_t NVIC_GetPriorityGrouping(void)
+                        ^
+                        ;
+../CMSIS/core_cm3.h(1756): error: unknown type name '__INLINE'
+static __INLINE uint32_t ITM_SendChar (uint32_t ch)
+       ^
+../CMSIS/core_cm3.h(1756): error: expected ';' after top level declarator
+static __INLINE uint32_t ITM_SendChar (uint32_t ch)
+                        ^
+                        ;
+../APP/SysTick.c(1): warning: In file included from...
+../APP/systick.h(5): warning: In file included from...
+../APP/system_conf.h(5): warning: non-portable path to file '"USART.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "usart.h"   //<B4><AE><BF><U+06B6><A8><D2><E5>
+         ^~~~~~~~~
+         "USART.h"
+../APP/SysTick.c(1): warning: In file included from...
+../APP/systick.h(5): warning: In file included from...
+../APP/system_conf.h(5): warning: In file included from...
+../APP/usart.h(16): warning: non-portable path to file '"System_Conf.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "system_conf.h"
+         ^~~~~~~~~~~~~~~
+         "System_Conf.h"
+../APP/SysTick.c(1): warning: In file included from...
+../APP/systick.h(5): warning: In file included from...
+../APP/system_conf.h(6): warning: non-portable path to file '"DMA.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "dma.h"     //DMA<U+0123><BF><U+9DA8><D2><E5>
+         ^~~~~~~
+         "DMA.h"
+../APP/SysTick.c(1): warning: In file included from...
+../APP/systick.h(5): warning: In file included from...
+../APP/system_conf.h(6): warning: In file included from...
+../APP/dma.h(6): warning: non-portable path to file '"System_Conf.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "system_conf.h"
+         ^~~~~~~~~~~~~~~
+         "System_Conf.h"
+../APP/SysTick.c(1): warning: In file included from...
+../APP/systick.h(5): warning: In file included from...
+../APP/system_conf.h(8): warning: non-portable path to file '"SysTick.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "systick.h"
+         ^~~~~~~~~~~
+         "SysTick.h"
+../APP/SysTick.c(4): warning: no previous extern declaration for non-static variable 'TimingDelay2' [-Wmissing-variable-declarations]
+__IO u32 TimingDelay2 = 0;
+         ^
+../APP/SysTick.c(12): warning: implicit declaration of function 'SysTick_Config' is invalid in C99 [-Wimplicit-function-declaration]
+        if(SysTick_Config(SystemCoreClock / 1000))
+           ^
+../APP/SysTick.c(12): error: use of undeclared identifier 'SystemCoreClock'
+        if(SysTick_Config(SystemCoreClock / 1000))
+                          ^
+../APP/SysTick.c(3): warning: no previous extern declaration for non-static variable 'TimingDelay' [-Wmissing-variable-declarations]
+__IO u32 TimingDelay ;
+         ^
+10 warnings and 7 errors generated.
+compiling SysTick.c...
+../APP/led.c(1): warning: In file included from...
+../APP/led.h(4): warning: In file included from...
+../CMSIS\stm32f10x.h(478): warning: In file included from...
+../CMSIS/core_cm3.h(1468): error: unknown type name '__INLINE'
+static __INLINE void NVIC_SetPriorityGrouping(uint32_t PriorityGroup)
+       ^
+../CMSIS/core_cm3.h(1468): error: expected identifier or '('
+static __INLINE void NVIC_SetPriorityGrouping(uint32_t PriorityGroup)
+                ^
+../CMSIS/core_cm3.h(1489): error: unknown type name '__INLINE'
+static __INLINE uint32_t NVIC_GetPriorityGrouping(void)
+       ^
+../CMSIS/core_cm3.h(1489): error: expected ';' after top level declarator
+static __INLINE uint32_t NVIC_GetPriorityGrouping(void)
+                        ^
+                        ;
+../CMSIS/core_cm3.h(1756): error: unknown type name '__INLINE'
+static __INLINE uint32_t ITM_SendChar (uint32_t ch)
+       ^
+../CMSIS/core_cm3.h(1756): error: expected ';' after top level declarator
+static __INLINE uint32_t ITM_SendChar (uint32_t ch)
+                        ^
+                        ;
+6 errors generated.
+compiling led.c...
+"..\Output\Template.axf" - 79 Error(s), 68 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.0.1.pack
+                ARM::CMSIS:CORE:5.0.1
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.0.1
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Template
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.0.1
+Target not created.
+Build Time Elapsed:  00:00:06
+</pre>
+</body>
+</html>
